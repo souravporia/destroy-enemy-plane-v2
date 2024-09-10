@@ -1,0 +1,31 @@
+{
+    "environment": {
+        "grid_size": [5, 5],
+        "plane_dim" :  [[0, 0, 1],
+                        [1, 1, 1],
+                        [0, 0, 1]],
+        "reward" : {
+            "destroy" : 10,
+            "hit" : 1,
+            "miss" : -1
+        }
+    },
+
+    "agent": {
+        "gamma": 0.9,
+        "max_missiles" : 10,
+        "algorithm" : "mc",
+        "policy_iteration" : {
+            "theta" : 0.5
+        },
+        "mc" : {
+            "episode_length" : 50,
+            "epsilon" : 0.2,
+            "number_of_episodes" : 20000
+        }
+    },
+
+    "visualization" : {
+        "mc_episodes_inverval" : 10000
+    }
+}

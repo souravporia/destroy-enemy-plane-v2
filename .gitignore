@@ -1,0 +1,7 @@
+# Ignore __pycache__ directories in src
+src/**/__pycache__/
+
+# Common Python ignores
+__pycache__/
+*.pyc
+*.pyo
